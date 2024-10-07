@@ -1,0 +1,14 @@
+[package]
+name = "cluster_routes_wasm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]  # Required for wasm-pack
+
+[dependencies]
+wasm-bindgen = "0.2.93"
+petgraph = "0.6.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde-wasm-bindgen = "0.4"
